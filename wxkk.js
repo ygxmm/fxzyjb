@@ -1,7 +1,7 @@
 /*
 大牌联合 宠爱有礼
 
-https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/5063373?activityId=dzlhkkffoo1208&shareUuid=56ea025fe2194566a78ee2f37fa0c459
+https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/5063373?activityId=dzlhkkffoo1208&shareUuid=593c81efe9e749ba9821d0e2666a12fd
 */
 const $ = new Env("大牌联合 宠爱有礼");
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
