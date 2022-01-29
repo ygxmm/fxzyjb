@@ -94,7 +94,7 @@ let activityCookie =''
     });
     return;
   }
-  $.activityId = "dz220208100001616201shop"
+  $.activityId = "2770796cb7e642dda88533636914802c"
   $.shareUuid = ""
   console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/shop/league/activity?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
 
