@@ -1,6 +1,5 @@
 /*
 早鸟派对 好物焕春
-cron:47 4 1-12 11 * jd_lzdz1_customized10.js
 */
 const $ = new Env("早鸟派对 好物焕春");
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
