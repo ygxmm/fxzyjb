@@ -310,7 +310,7 @@ async function run() {
       }
     }else{
       if($.index % 3 == 0) console.log('休息1分钟，别被黑ip了\n可持续发展')
-      if($.index % 3 == 0) await $.wait(parseInt(Math.random() * 5000 + 30000, 10))
+      if($.index % 3 == 0) await $.wait(parseInt(Math.random() * 5000 + 60000, 10))
     }
   } catch (e) {
     console.log(e)
