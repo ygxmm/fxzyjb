@@ -9,7 +9,7 @@ let cookiesArr = [], cookie = '', message;
 let secretp='',inviteId=[]
 let helpnum=3;
 //助力码
-let inviteId1='PKASTT0205KkcBllMhi-3RW-L0YB8CTdWmYaRzTQjeQOc';
+let inviteId1='PKASTT016v_p7RB0a_FzSJHWpCTdWmYaRzTQjeQOc';
 
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
