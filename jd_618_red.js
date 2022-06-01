@@ -49,7 +49,7 @@ let appId, fingerprint, token, enCryptMethodJD;
 })().catch((e) => { $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '') }).finally(() => { $.done(); })
 
 async function main(ck, code = 'ltLV9we') {
-    const codes = ['ltLV9we','ltLV9we']
+    const codes = ['ltLV9we','lCb0CQ0']
     code = $.CODE618 ? $.CODE618 : codes[random(0, codes.length)]
     //console.log(code)
     let userName = decodeURIComponent(ck.match(/pt_pin=([^; ]+)(?=;?)/) && ck.match(/pt_pin=([^; ]+)(?=;?)/)[1])
