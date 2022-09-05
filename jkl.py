@@ -1,22 +1,23 @@
 #!/usr/bin/python3
 # -*- coding: utf8 -*-
 """
+
 #（必填）填写要监控的GitHub仓库的 “用户名/仓库名/仓库分支/脚本关键词” 监控多个仓库请用 & 隔开
-export GitRepoHost="KingRan/KR/main/opencard&feverrun/my_scripts/main/opencard&smiek2121/scripts/master/opencard&okyyds/yyds/master/lzdz1"
+export GitRepoHost="KingRan/KR/main/opencard&smiek2121/scripts/master/opencard&okyyds/yyds/master/lzdz1"
 #（可选）http代理，针对国内机使用，访问不了github的可以填上，支持用户名密码
-export GitProxy="http://username:password@127.0.0.1:8080"
+#export GitProxy="http://username:password@127.0.0.1:8080"
 #（可选）Github Token变量，将api请求次数提升到5000次/小时，默认60次/小时
-export GitToken="GithubToken"
+#export GitToken="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"
 #（可选）任务参数，格式和青龙的 conc、desi 一样的用法，请自行参考，不使用请留空
-export opencardParam="desi JD_COOKIE 1 3-10"
+#export opencardParam="desi JD_COOKIE 1 3-10"
 #（可选）运行开卡脚本前禁用开卡脚本定时任务，不使用请留空
 export opencardDisable="true"
 #（可选）检测重复任务相似度阈值，默认值为50，不使用请留空
 #       值过小：两个不同的开卡脚本识别为同一个
 #       值过大：两个相同开卡脚本识别为两个不同脚本
-export opencardSimi="50"
+#export opencardSimi="50"
 #（可选）死循环模式，默认为正常模式，脚本运行2小时自动停止，定时规则请设置为：0 */2 * * *
-export opencardLoop="true"
+export opencardLoop="false"
 
 cron: */1 * * * *
 new Env('开卡更新检测')
