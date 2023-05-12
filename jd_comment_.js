@@ -1,7 +1,33 @@
 // auther 烟花小神 killall-love
+
 const $ = new Env('带图评价-解密版-自定义Sign');
-// 你的Cookie
-cookiesArr = []
+
+const notify = $.isNode() ? require('./sendNotify') : '';
+
+const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+
+let jdNotify = true;
+
+//IOS等用户直接用NobyDa的jd cookie
+
+let cookiesArr = [], cookie = '', message = '';
+
+if ($.isNode()) {
+
+    Object.keys(jdCookieNode).forEach((item) => {
+
+        cookiesArr.push(jdCookieNode[item])
+
+    })
+
+    if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => { };
+
+} else {
+
+    cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
+
+}
+
 // 兼容Xposed 脚本执行
 cookiesArr[cookiesArr.length] = process.env.APP_COOKIE;
 //用户过滤关键字环境变量！
